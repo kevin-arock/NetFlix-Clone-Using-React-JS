@@ -5,7 +5,7 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDKzKKuTNSBbonja8fvH0UcDECEW2AWXts",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "webflix-7cb68.firebaseapp.com",
   projectId: "webflix-7cb68",
   storageBucket: "webflix-7cb68.appspot.com",
