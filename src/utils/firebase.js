@@ -1,11 +1,13 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import {  initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: "AIzaSyDKzKKuTNSBbonja8fvH0UcDECEW2AWXts",
   authDomain: "webflix-7cb68.firebaseapp.com",
   projectId: "webflix-7cb68",
   storageBucket: "webflix-7cb68.appspot.com",
@@ -15,3 +17,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+export const auth = getAuth();
